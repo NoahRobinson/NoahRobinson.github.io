@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UN Goals Step 5</title>
+	<title>UN Goals Step 6</title>
 </head>
 <body>
 <!--No Poverty UN Goal - 1-->
@@ -54,6 +54,7 @@
   background-color: DodgerBlue;
   align-content: center;
   justify-content: center;
+  margin-top:200px;
 }
 
 .flex-container > div {
@@ -68,12 +69,23 @@
 	margin-right:auto;
 	width:100%;
 }
+.topbar{
+  overflow-color:white;
+  background-color:white;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
 </style>
 
-<picture>
-  <source media="(min-width: 940px)" srcset="images/RectangleUNLogo.png">
-  <img class = "center" src="(min-width: 465px)" srcset="images/SquareUNLogo.png">
-</picture>
+<div class = "topbar">
+  <picture>
+    <source media="(min-width: 940px)" srcset="images/RectangleUNLogo.png">
+    <img class = "center" src="(min-width: 465px)" srcset="images/SquareUNLogo.png">
+  </picture>
+</div>
 
 <div class="flex-container">
   <div class="flip-box">

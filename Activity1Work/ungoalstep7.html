@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UN Goals Step 5</title>
+	<title>UN Goals Step 7</title>
 </head>
 <body>
 <!--No Poverty UN Goal - 1-->
@@ -54,6 +54,7 @@
   background-color: DodgerBlue;
   align-content: center;
   justify-content: center;
+  margin-top:300px;
 }
 
 .flex-container > div {
@@ -68,12 +69,23 @@
 	margin-right:auto;
 	width:100%;
 }
+.topbar{
+  overflow-color:white;
+  background-color:white;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
 </style>
 
-<picture>
-  <source media="(min-width: 940px)" srcset="images/RectangleUNLogo.png">
-  <img class = "center" src="(min-width: 465px)" srcset="images/SquareUNLogo.png">
-</picture>
+<div class = "topbar">
+  <picture>
+    <source media="(min-width: 940px)" srcset="images/RectangleUNLogo.png">
+    <img class = "center" src="(min-width: 465px)" srcset="images/SquareUNLogo.png">
+  </picture>
+</div>
 
 <div class="flex-container">
   <div class="flip-box">
@@ -299,5 +311,28 @@
     </div>
   </div>
 </div>
+
+<script>
+if (w > 940){
+  document.getElementsByClassName("flex-container")[0].style.marginTop = "200px";
+}
+else {
+  document.getElementsByClassName("flex-container")[0].style.marginTop = "280px":
+}
+window.onresize = function(event){
+
+w = window.innerWidth
+
+if (w > 940){
+  document.getElementsByClassName("flex-container")[0].style.marginTop = "200px";
+}
+else {
+  document.getElementsByClassName("flex-container")[0].style.marginTop = "280px":
+}
+
+}
+
+</script>
+
 </body>
 </html></head>
